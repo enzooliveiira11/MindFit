@@ -1,0 +1,173 @@
+body {
+  background-color: #43B0DF; /* Define a cor de fundo do corpo da página. */
+}
+
+header {
+  position: fixed; /* Mantém o cabeçalho fixo no topo da página. */
+  width: 94%; /* Define a largura do cabeçalho. */
+  top: 0; /* Posiciona o cabeçalho no topo da página. */
+  color: #ffffff; /* Define a cor do texto como branca. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+  font-weight: bolder; /* Aumenta a espessura da fonte do texto. */
+}
+
+header, nav ul {
+  display: flex; /* Exibe o cabeçalho e a lista de navegação como um flexbox. */
+  justify-content: space-between; /* Distribui o espaço entre os itens. */
+  padding: 1rem; /* Adiciona preenchimento interno. */
+}
+
+ul a {
+  text-decoration: none; /* Remove o sublinhado dos links. */
+  color: #ffffff; /* Define a cor dos links como branca. */
+}
+
+.MindFit {
+  text-decoration: none; /* Remove o sublinhado do texto. */
+  color: #ffffff; /* Define a cor do texto como branca. */
+  margin-top: 2%; /* Adiciona uma margem superior. */
+  font-size: 5vh; /* Define o tamanho da fonte como 5% da altura da viewport. */
+}
+
+.box-login {
+  background: #ffffff; /* Define o fundo do box de login como branco. */
+  width: 320px; /* Define a largura do box. */
+  max-width: 100%; /* Define a largura máxima como 100%. */
+  margin: auto; /* Centraliza o box horizontalmente. */
+  padding: 1em; /* Adiciona preenchimento interno de 1em. */
+  margin-top: 10%; /* Adiciona uma margem superior de 10%. */
+  border-radius: 20px; /* Define bordas arredondadas de 20px. */
+  height: 350px; /* Define a altura do box. */
+}
+
+.title_login {
+  width: 100%; /* Define a largura do título como 100%. */
+  margin-bottom: 0.3em; /* Adiciona uma margem inferior. */
+  font-size: 2.3em; /* Define o tamanho da fonte. */
+  font-weight: bolder; /* Aumenta a espessura da fonte. */
+  text-align: center; /* Centraliza o texto. */
+  color: #000000; /* Define a cor do texto como preta. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+}
+
+.hidden {
+  border: 0; /* Remove a borda. */
+  clip: rect(0 0 0 0); /* Oculta visualmente o elemento (para acessibilidade). */
+  height: 1px; /* Define a altura mínima. */
+  margin: -1px; /* Remove a margem. */
+  overflow: hidden; /* Oculta o transbordamento. */
+  padding: 0; /* Remove o preenchimento. */
+  position: absolute; /* Posiciona o elemento de forma absoluta. */
+  width: 1px; /* Define a largura mínima. */
+}
+
+input {
+  border: 0; /* Remove a borda. */
+  color: inherit; /* Herda a cor do elemento pai. */
+  font: inherit; /* Herda a fonte do elemento pai. */
+  margin: 0; /* Remove a margem. */
+  outline: 0; /* Remove a borda de foco padrão. */
+  padding: 0; /* Remove o preenchimento. */
+  background-image: none; /* Remove a imagem de fundo. */
+}
+
+input[type="submit"] {
+  cursor: pointer; /* Altera o cursor para o ícone de ponteiro ao passar sobre o botão de envio. */
+}
+
+.form {
+  width: 100%; /* Define a largura do formulário como 100%. */
+  display: block; /* Exibe o formulário como um bloco. */
+}
+
+.form input[type="password"],
+.form input[type="text"] {
+  width: 100%; /* Define a largura dos campos de entrada como 100%. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte dos campos de entrada. */
+}
+
+.form_field {
+  display: flex; /* Exibe o campo do formulário como um flexbox. */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px. */
+}
+
+.form_input {
+  flex: 1; /* Faz com que o campo de entrada ocupe todo o espaço disponível. */
+}
+
+.login {
+  color: #000000; /* Define a cor do texto como preta. */
+}
+
+.login label,
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="submit"] {
+  border-radius: 0.5em; /* Define bordas arredondadas para os elementos. */
+  margin: 1%; /* Adiciona uma margem de 1% ao redor dos elementos. */
+  height: 7vh; /* Define a altura dos campos de entrada e botão. */
+}
+
+.login input[type="password"],
+.login input[type="text"] {
+  background-color: #ffffff; /* Define o fundo dos campos de entrada como branco. */
+}
+
+.login input[type="password"]:focus,
+.login input[type="text"]:focus,
+.login input[type="password"]:hover,
+.login input[type="text"]:hover {
+  background-color: rgb(217, 217, 217); /* Altera a cor de fundo dos campos ao focar ou passar o mouse. */
+}
+
+#entrar-btn {
+  background-color: #1C4E8A; /* Define a cor de fundo do botão de login. */
+  color: #eee; /* Define a cor do texto do botão de login. */
+  font-weight: 700; /* Aumenta a espessura da fonte do texto do botão de login. */
+  text-transform: uppercase; /* Converte o texto para maiúsculas. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão de login. */
+  border: none; /* Remove a borda do botão de login. */
+  padding: 10px; /* Adiciona preenchimento ao botão de login. */
+  border-radius: 5px; /* Define bordas arredondadas ao botão de login. */
+  cursor: pointer; /* Altera o cursor para um ícone de ponteiro ao passar sobre o botão de login. */
+  width: 100%; /* Define a largura do botão de login como 100%. */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo do botão ao passar o mouse. */
+}
+
+#entrar-btn:hover,
+#entrar-btn:focus {
+  background-color: #12335c; /* Altera a cor de fundo do botão ao focar ou passar o mouse. */
+}
+
+.resgatar-senha p {
+  margin-top: 1.5rem; /* Adiciona uma margem superior de 1.5rem. */
+  margin-bottom: 1.5rem; /* Adiciona uma margem inferior de 1.5rem. */
+}
+
+.resgatar-senha {
+  text-align: center; /* Centraliza o texto. */
+  color: #000000; /* Define a cor do texto como preta. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+}
+
+.resgatar-senha a {
+  text-decoration: none; /* Remove o sublinhado dos links. */
+  color: #000000; /* Define a cor do link como preta. */
+}
+
+.resgatar-senha a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao link ao passar o mouse. */
+  color: #43B0DF; /* Altera a cor do link ao passar o mouse. */
+}
+
+/* Media Queries */
+/* Media Queries para iPhone XR */
+@media only screen and (max-width: 414px) {
+  ul a, .MindFit {
+      font-size: 0; /* Oculta o texto dos links e do título MindFit em telas pequenas. */
+  }
+  .box-login {
+      margin-top: 40%; /* Aumenta a margem superior do box de login para 40%. */
+      width: 80%; /* Reduz a largura do box de login para 80%. */
+  }
+}

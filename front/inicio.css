@@ -1,0 +1,107 @@
+body {
+  background-color: #43B0DF; /* Define a cor de fundo do corpo da página. */
+  margin: 0; /* Remove a margem padrão do corpo. */
+}
+
+header {
+  position: absolute; /* Posiciona o cabeçalho de forma absoluta. */
+  width: 98.2%; /* Define a largura do cabeçalho. */
+  top: 0; /* Posiciona o cabeçalho no topo da página. */
+  background-color: #1c4e8a; /* Define a cor de fundo do cabeçalho. */
+  color:#ffffff; /* Define a cor do texto do cabeçalho como branca. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do cabeçalho. */
+}
+
+header h1{
+font-size: 4vh; /* Define o tamanho da fonte como 4% da altura da viewport. */
+align-items: center; /* Centraliza os itens verticalmente (não visível porque o flexbox não está aplicado diretamente). */
+display: flex; /* Exibe o título como um flexbox. */
+}
+
+header, nav ul {
+  display: flex; /* Exibe o cabeçalho e a lista de navegação como um flexbox. */
+  justify-content: space-between; /* Distribui o espaço entre os itens. */
+  padding: 1rem; /* Adiciona preenchimento interno. */
+}
+ 
+header ul button{
+text-decoration: none; /* Remove o sublinhado do botão. */
+font-size: 2vh; /* Define o tamanho da fonte do botão. */
+color:#1c4e8a; /* Define a cor do texto do botão. */
+background-color: #ffffff; /* Define a cor de fundo do botão como branca. */
+width: 20vh; /* Define a largura do botão. */
+height: 5vh; /* Define a altura do botão. */
+border-radius: 10vh; /* Define bordas arredondadas ao botão. */
+font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão. */
+font-weight: bold; /* Aumenta a espessura da fonte do texto do botão. */
+}
+
+header ul button:hover{
+text-decoration: none; /* Remove o sublinhado ao passar o mouse sobre o botão. */
+color:#000000; /* Altera a cor do texto do botão ao passar o mouse. */
+}
+
+body button{
+text-decoration: none; /* Remove o sublinhado do botão. */
+font-size: 2vh; /* Define o tamanho da fonte do botão. */
+color:#ffffff; /* Define a cor do texto do botão. */
+background-color:#1c4e8a; /* Define a cor de fundo do botão como #1c4e8a. */
+width: 20vh; /* Define a largura do botão. */
+height: 5vh; /* Define a altura do botão. */
+border-radius: 10vh; /* Define bordas arredondadas ao botão. */
+font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão. */
+font-weight: bold; /* Aumenta a espessura da fonte do texto do botão. */
+margin-left: 3%; /* Adiciona margem à esquerda do botão. */
+}
+
+body button:hover{
+color:#777777; /* Altera a cor do texto do botão ao passar o mouse. */
+}
+
+div h1{
+  display: flex; /* Exibe o título dentro de um flexbox. */
+  color:#ffffff; /* Define a cor do texto como branca. */
+  width: 70%; /* Define a largura do título como 70% da largura da viewport. */
+  font-size: 400%; /* Define o tamanho da fonte como 400%. */
+  margin-top: 17%; /* Adiciona uma margem superior de 17%. */
+  margin-left: 2%; /* Adiciona uma margem à esquerda de 2%. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+  font-weight: bold; /* Aumenta a espessura da fonte do texto. */
+}
+
+.aviaopapel{
+display: flex; /* Exibe o elemento .aviaopapel como um flexbox. */
+margin-left: 60%; /* Adiciona margem à esquerda do elemento .aviaopapel. */
+}
+
+.montanha{
+display: flex; /* Exibe o elemento .montanha como um flexbox. */
+width: 75vh; /* Define a largura do elemento .montanha. */
+margin-left: 45%; /* Adiciona margem à esquerda do elemento .montanha. */
+margin-top: 4vh; /* Adiciona margem superior ao elemento .montanha. */
+}
+
+/* Media Queries */
+/* Media Queries para iPhone XR */
+@media only screen and (max-width: 414px) {
+  div h1{
+    width: 100%; /* Define a largura do título como 100% da largura da viewport. */
+    font-size: 300%; /* Reduz o tamanho da fonte para 300%. */
+    margin-top: 80%; /* Aumenta a margem superior para 80%. */
+  }
+  header a button{
+    width: 140%; /* Aumenta a largura do botão de navegação para 140%. */
+  }
+  header{
+    display: flex; /* Exibe o cabeçalho como um flexbox. */
+    justify-content:space-around; /* Distribui o espaço entre os itens do cabeçalho. */
+    padding: 2rem; /* Adiciona preenchimento interno de 2rem. */
+    width:83%; /* Reduz a largura do cabeçalho para 83%. */
+  }
+  .aviaopapel{
+    width: 0vh; /* Oculta o elemento .aviaopapel em telas pequenas. */
+  }
+  .montanha{
+    width: 0vh; /* Oculta o elemento .montanha em telas pequenas. */
+  }
+}

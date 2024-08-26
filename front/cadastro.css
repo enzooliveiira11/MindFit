@@ -1,0 +1,193 @@
+body {
+  background-color: #43B0DF; /* Define a cor de fundo do corpo da página. */
+}
+
+header {
+  position: fixed; /* Mantém o cabeçalho fixo no topo durante o scroll. */
+  width: 94%; /* Define a largura do cabeçalho em 94% da largura da viewport. */
+  top: 0; /* Posiciona o cabeçalho no topo da página. */
+  color: #ffffff; /* Define a cor do texto como branca. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+  font-weight: bolder; /* Aumenta a espessura da fonte. */
+}
+
+header,
+nav ul {
+  display: flex; /* Exibe o conteúdo como um flexbox. */
+  justify-content: space-between; /* Distribui o espaço entre os elementos filhos igualmente. */
+  padding: 1rem; /* Adiciona preenchimento de 1rem em torno dos elementos. */
+  list-style: none; /* Remove os marcadores da lista. */
+}
+
+ul a {
+  text-decoration: none; /* Remove a sublinhado dos links. */
+  color: #ffffff; /* Define a cor dos links como branca. */
+}
+
+.MindFit {
+  text-decoration: none; /* Remove o sublinhado do link. */
+  color: #ffffff; /* Define a cor do texto como branca. */
+  margin-top: 2%; /* Adiciona uma margem superior de 2%. */
+  font-size: 5vh; /* Define o tamanho da fonte em 5% da altura da viewport. */
+}
+
+.box-cadastro {
+  background: #ffffff; /* Define o fundo do box como branco. */
+  width: 320px; /* Define a largura do box. */
+  max-width: 100%; /* Garante que a largura máxima do box não ultrapasse 100%. */
+  margin: auto; /* Centraliza o box horizontalmente. */
+  padding: 1em; /* Adiciona preenchimento interno de 1em. */
+  margin-top: 10%; /* Adiciona uma margem superior de 10%. */
+  border-radius: 20px; /* Define bordas arredondadas de 20px. */
+}
+
+.title_cadastro {
+  width: 100%; /* O título ocupa toda a largura disponível. */
+  float: left; /* Flutua o título à esquerda. */
+  margin-bottom: 0.3em; /* Adiciona margem inferior ao título. */
+  font-size: 2.3em; /* Define o tamanho da fonte. */
+  font-weight: 300; /* Define a espessura da fonte como 300 (leve). */
+  text-align: center; /* Centraliza o texto. */
+  padding-bottom: 0.3em; /* Adiciona preenchimento inferior. */
+  color: #000000; /* Define a cor do texto como preta. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte. */
+}
+
+.hidden {
+  border: 0; /* Remove a borda. */
+  clip: rect(0 0 0 0); /* Oculta visualmente o elemento (para acessibilidade). */
+  height: 1px; /* Define a altura mínima. */
+  margin: -1px; /* Remove a margem. */
+  overflow: hidden; /* Oculta o transbordamento. */
+  padding: 0; /* Remove o preenchimento. */
+  position: absolute; /* Posiciona o elemento de forma absoluta. */
+  width: 1px; /* Define a largura mínima. */
+}
+
+input {
+  background-image: none; /* Remove a imagem de fundo. */
+  border: 0; /* Remove a borda. */
+  color: inherit; /* Herda a cor do elemento pai. */
+  font: inherit; /* Herda a fonte do elemento pai. */
+  margin: 0; /* Remove a margem. */
+  outline: 0; /* Remove a borda de foco padrão. */
+  padding: 0; /* Remove o preenchimento. */
+}
+
+input[type="submit"] {
+  cursor: pointer; /* Altera o cursor para o ícone de ponteiro ao passar sobre o botão de envio. */
+}
+
+.form {
+  width: 100%; /* Define a largura do formulário como 100%. */
+  display: block; /* Exibe o formulário como um bloco. */
+  float: left; /* Flutua o formulário à esquerda. */
+}
+
+.form input[type="password"],
+.form input[type="text"],
+.form input[type="submit"] {
+  width: 100%; /* Define a largura dos campos de entrada como 100%. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte dos campos de entrada. */
+}
+
+.form_field {
+  display: flex; /* Exibe o campo do formulário como um flexbox. */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px. */
+}
+
+.form_input {
+  flex: 1; /* Faz com que o campo de entrada ocupe todo o espaço disponível. */
+}
+
+.login {
+  color: #000000; /* Define a cor do texto como preta. */
+}
+
+.login label,
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="submit"] {
+  border-radius: 0.5em; /* Define bordas arredondadas para os elementos. */
+  margin: 1%; /* Adiciona uma margem de 1% ao redor dos elementos. */
+  height: 7vh; /* Define a altura dos campos de entrada e botão. */
+}
+
+.login input[type="password"],
+.login input[type="text"] {
+  background-color: rgb(255, 255, 255); /* Define o fundo dos campos de entrada como branco. */
+}
+
+.login input[type="password"]:focus,
+.login input[type="password"]:hover,
+.login input[type="text"]:focus,
+.login input[type="text"]:hover {
+  background-color: rgb(217, 217, 217); /* Altera a cor de fundo dos campos ao focar ou passar o mouse. */
+}
+
+button {
+  display: block; /* Exibe o botão como um bloco. */
+  text-align: center; /* Centraliza o texto dentro do botão. */
+}
+
+button#entrar {
+  background-color: #1C4E8A; /* Define a cor de fundo do botão. */
+  color: #eee; /* Define a cor do texto do botão. */
+  font-weight: 700; /* Aumenta a espessura da fonte do texto do botão. */
+  text-transform: uppercase; /* Converte o texto para maiúsculas. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão. */
+  border: none; /* Remove a borda do botão. */
+  padding: 10px 20px; /* Adiciona preenchimento ao botão. */
+  cursor: pointer; /* Altera o cursor para um ícone de ponteiro ao passar sobre o botão. */
+  margin: 0 auto; /* Centraliza o botão horizontalmente. */
+  margin-bottom: 3%; /* Adiciona margem inferior ao botão. */
+}
+
+a button#entrar:focus,
+a button#entrar:hover {
+  background-color: #12335c; /* Altera a cor de fundo do botão ao focar ou passar o mouse. */
+}
+
+.resgatar-senha p {
+  margin-top: 1.5rem; /* Adiciona margem superior. */
+  margin-bottom: 1.5rem; /* Adiciona margem inferior. */
+}
+
+.resgatar-senha {
+  text-align: center; /* Centraliza o texto. */
+  color: #000000; /* Define a cor do texto como preta. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+}
+
+.resgatar-senha a {
+  text-decoration: none; /* Remove o sublinhado dos links. */
+  color: #000000; /* Define a cor do link como preta. */
+}
+
+.resgatar-senha a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao link ao passar o mouse. */
+  color: #43B0DF; /* Altera a cor do link ao passar o mouse. */
+}
+
+
+/* Media Queries */
+/* Media Queries para iPhone XR */
+@media only screen and (max-width: 414px) {
+  ul a {
+    font-size: 0px; /* Oculta o texto dos links no menu para telas menores. */
+  }
+
+  .MindFit {
+    font-size: 0px; /* Oculta o texto MindFit para telas menores. */
+  }
+
+  .box-cadastro {
+    width: 80%; /* Reduz a largura do box de cadastro para 80%. */
+    margin-top: 30%; /* Aumenta a margem superior do box para 30%. */
+  }
+
+  .resgatar-senha a {
+    text-decoration: underline; /* Adiciona sublinhado ao link. */
+    color: #43B0DF; /* Altera a cor do link. */
+  }
+}

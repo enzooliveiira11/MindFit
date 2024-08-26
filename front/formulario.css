@@ -1,0 +1,130 @@
+body {
+  background-color: #43B0DF; /* Define a cor de fundo do corpo da página. */
+  font-family: Arial, sans-serif; /* Define a fonte padrão do corpo da página. */
+  margin: 0; /* Remove a margem padrão do corpo. */
+}
+
+form {
+  align-items: center; /* Centraliza os itens verticalmente (não visível porque o flexbox não está aplicado diretamente). */
+  max-width: 400px; /* Define a largura máxima do formulário como 400px. */
+  margin: auto; /* Centraliza o formulário horizontalmente. */
+  padding: 10px; /* Adiciona preenchimento interno de 10px. */
+  border: 1px solid #ccc; /* Define uma borda cinza clara ao redor do formulário. */
+  border-radius: 5px; /* Define bordas arredondadas de 5px. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do formulário. */
+  background-color: #ffffff; /* Define o fundo do formulário como branco. */
+}
+
+form>a{
+  align-items: center; /* Centraliza os itens verticalmente. */
+  display: flex; /* Exibe o link como um flexbox. */
+  justify-content: center; /* Centraliza o link horizontalmente. */
+}
+
+label {
+  display: block; /* Exibe o rótulo como um bloco. */
+  margin-bottom: 8px; /* Adiciona margem inferior ao rótulo. */
+}
+
+input[type="text"],
+select {
+  width: 90%; /* Define a largura dos campos de texto e seleção como 90%. */
+  padding: 8px; /* Adiciona preenchimento interno de 8px. */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20px. */
+  border: 1px solid #ccc; /* Define uma borda cinza clara ao redor dos campos. */
+  border-radius: 4px; /* Define bordas arredondadas de 4px. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor dos campos. */
+}
+
+.error {
+  color: red; /* Define a cor do texto de erro como vermelha. */
+  margin-bottom: 10px; /* Adiciona margem inferior de 10px. */
+}
+
+header {
+  position:absolute; /* Posiciona o cabeçalho de forma absoluta. */
+  width: 99%; /* Define a largura do cabeçalho como 99% da largura da viewport. */
+  top: 0; /* Posiciona o cabeçalho no topo da página. */
+  background-color: #1c4e8a; /* Define a cor de fundo do cabeçalho. */
+  color:#ffffff; /* Define a cor do texto do cabeçalho como branca. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do cabeçalho. */
+}
+
+header h1{
+font-size: 4vh; /* Define o tamanho da fonte como 4% da altura da viewport. */
+align-items: center; /* Centraliza verticalmente os itens do cabeçalho (não visível porque o flexbox não está aplicado diretamente). */
+display: flex; /* Exibe o cabeçalho como um flexbox. */
+}
+
+header, nav ul {
+  display: flex; /* Exibe o cabeçalho e a lista de navegação como um flexbox. */
+  padding-top: 1rem; /* Adiciona preenchimento superior de 1rem. */
+  padding-left: 1rem; /* Adiciona preenchimento à esquerda de 1rem. */
+  padding-bottom: 1rem; /* Adiciona preenchimento inferior de 1rem. */
+}
+ 
+header ul button{
+text-decoration: none; /* Remove o sublinhado do botão dentro da lista de navegação. */
+font-size: 2vh; /* Define o tamanho da fonte do botão como 2% da altura da viewport. */
+color:#1c4e8a; /* Define a cor do texto do botão. */
+background-color: #ffffff; /* Define a cor de fundo do botão como branca. */
+width: 20vh; /* Define a largura do botão como 20% da altura da viewport. */
+height: 5vh; /* Define a altura do botão como 5% da altura da viewport. */
+border-radius: 10vh; /* Define bordas arredondadas ao botão. */
+font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão. */
+font-weight: bold; /* Aumenta a espessura da fonte do texto do botão. */
+margin-left: 750%; /* Empurra o botão para fora da tela à direita. */
+}
+
+header ul button:hover{
+text-decoration: none; /* Remove o sublinhado ao passar o mouse sobre o botão. */
+color:#000000; /* Altera a cor do texto do botão ao passar o mouse. */
+}
+
+body button{
+text-decoration: none; /* Remove o sublinhado do botão dentro do corpo. */
+font-size: 2vh; /* Define o tamanho da fonte do botão como 2% da altura da viewport. */
+color:#ffffff; /* Define a cor do texto do botão. */
+background-color:#1c4e8a; /* Define a cor de fundo do botão como #1c4e8a. */
+width: 20vh; /* Define a largura do botão como 20% da altura da viewport. */
+height: 5vh; /* Define a altura do botão como 5% da altura da viewport. */
+border-radius: 10vh; /* Define bordas arredondadas ao botão. */
+font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão. */
+font-weight: bold; /* Aumenta a espessura da fonte do texto do botão. */
+margin-left: 3%; /* Adiciona margem à esquerda do botão. */
+}
+
+body button:hover{
+color:#777777; /* Altera a cor do texto do botão ao passar o mouse. */
+}
+
+div h1{
+  display: flex; /* Exibe o título dentro de um flexbox. */
+  color:#ffffff; /* Define a cor do texto como branca. */
+  width: 70%; /* Define a largura do título como 70% da largura da viewport. */
+  font-size: 400%; /* Define o tamanho da fonte como 400%. */
+  margin-top: 17%; /* Adiciona uma margem superior de 17%. */
+  margin-left: 30%; /* Adiciona uma margem à esquerda de 30%. */
+  font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+  font-weight: bold; /* Aumenta a espessura da fonte do texto. */
+}
+
+
+/* Media Queries */
+/* Media Queries para iPhone XR */
+@media only screen and (max-width: 414px) {
+  div h1{
+    width: 100%; /* Define a largura do título como 100% da largura da viewport. */
+    font-size: 300%; /* Reduz o tamanho da fonte para 300%. */
+    margin-top: 80%; /* Aumenta a margem superior para 80%. */
+  }
+  header a button{
+    width: 140%; /* Aumenta a largura do botão de navegação para 140%. */
+  }
+  header{
+    display: flex; /* Exibe o cabeçalho como um flexbox. */
+    justify-content:space-around; /* Distribui o espaço entre os itens do cabeçalho. */
+    padding: 2rem; /* Adiciona preenchimento interno de 2rem. */
+    width:83%; /* Reduz a largura do cabeçalho para 83%. */
+  }
+}

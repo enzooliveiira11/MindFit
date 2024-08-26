@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <!-- Configurações meta, título, e inclusão de bibliotecas externas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFit</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js" defer></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" type="image/png" href="">
+
+</head>
+
+<body>
+    <!-- Cabeçalho com link para a página inicial e cadastro -->
+    <header>
+        <a class="MindFit" href="inicio.html">MindFit</a>
+        <nav>
+            <ul>
+                <a href="cadastro.html">Cadastrar-se</a>
+            </ul>
+        </nav>
+    </header>
+    <!-- Caixa de login com campos de e-mail e senha -->
+    <div class="box-login">
+        <h1 class="title_login"><i class="icon icon-key-1"></i> Entre</h1>
+        <form method="post" class="form login" id="login-form">
+            <div class="form_field">
+                <label for="login__username">
+                    <i class="icon icon-user-1"></i>
+                    <span class="hidden">E-mail</span>
+                </label>
+                <input autocomplete="off" id="login_username" type="text" name="email" class="form_input"
+                    placeholder="E-mail" required>
+            </div>
+            <div class="form_field">
+                <label for="login_password">
+                    <i class="icon icon-lock"></i>
+                    <span class="hidden">Senha</span>
+                </label>
+                <input id="login_password" type="password" name="password" class="form_input" placeholder="Senha"
+                    required>
+            </div>
+            
+            <!-- Botão para enviar o formulário de login -->
+            <button id="entrar-btn">Entrar</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
