@@ -1,96 +1,107 @@
+/* Estilos para o cabeçalho */
 header {
-    position: absolute; /* Posiciona o cabeçalho de forma absoluta. */
-    width: 98.2%; /* Define a largura do cabeçalho. */
-    top: 0; /* Posiciona o cabeçalho no topo da página. */
-    color: #ffffff; /* Define a cor do texto como branca. */
-    font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+    position: absolute;
+    width: 98.2%;
+    top: 0;
+    color: #ffffff;
+    font-family: "Gill Sans", sans-serif;
 }
 
 header h1 {
-    font-size: 4vh; /* Define o tamanho da fonte como 4% da altura da viewport. */
-    align-items: center; /* Centraliza os itens verticalmente (não visível porque o flexbox não está aplicado diretamente). */
-    display: flex; /* Exibe o título como um flexbox. */
+    font-size: 4vh;
+    align-items: center;
+    display: flex;
 }
-
 
 header,
 nav ul {
-    display: flex; /* Exibe o cabeçalho e a lista de navegação como um flexbox. */
-    justify-content: space-between; /* Distribui o espaço entre os itens. */
-    padding: 1rem; /* Adiciona preenchimento interno. */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 header ul button {
-    text-decoration: none; /* Remove o sublinhado do botão. */
-    font-size: 2vh; /* Define o tamanho da fonte do botão. */
-    color: #1c4e8a; /* Define a cor do texto do botão. */
-    background-color: #ffffff; /* Define a cor de fundo do botão como branca. */
-    width: 15vh; /* Define a largura do botão. */
-    height: 5vh; /* Define a altura do botão. */
-    border-radius: 10vh; /* Define bordas arredondadas ao botão. */
-    font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão. */
-    font-weight: bold; /* Aumenta a espessura da fonte do texto do botão. */
+    text-decoration: none;
+    font-size: 2vh;
+    color: #1c4e8a;
+    background-color: #ffffff;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 10vh;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
 }
 
 header ul button:hover {
-    text-decoration: none; /* Remove o sublinhado ao passar o mouse sobre o botão. */
-    color: #000000; /* Altera a cor do texto do botão ao passar o mouse. */
+    color: #000000;
 }
 
+/* Ajuste da estrutura da página */
 body {
-    display: grid; /* Exibe o corpo da página como um grid. */
-    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport. */
-    place-content: center; /* Centraliza o conteúdo do grid vertical e horizontalmente. */
-    font-family: sans-serif; /* Define a fonte padrão do corpo da página. */
-    background-color: #43B0DF; /* Define a cor de fundo do corpo da página. */
-    margin: 0; /* Remove a margem padrão do corpo. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #43B0DF;
+    margin: 0;
+    padding: 0;
 }
 
+/* Container principal que centraliza o conteúdo */
 .container {
-    display: grid; /* Exibe a div container como um grid. */
-    grid-template-columns: 180px 180px 180px 180px; /* Define a grade de 4 colunas com largura fixa. */
-    gap: 10px; /* Define o espaço entre os itens do grid. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz o contêiner ocupar a tela inteira */
 }
 
-.carta {
-    position: relative; /* Define a posição relativa para os itens da carta. */
-    cursor: pointer; /* Altera o cursor para um ícone de ponteiro ao passar sobre a carta. */
+/* Ajuste do título "Jogo da Memória" */
+#texto {
+    font-size: 3em;
+    color: #ffffff;
+    margin-bottom: 50px; /* Espaçamento entre o título e os botões */
+    text-align: center;
+    font-weight: bold;
 }
 
-.atras {
-    position: absolute; /* Posiciona o verso da carta de forma absoluta. */
-    background-color: rgb(255, 255, 255); /* Define a cor de fundo como branca. */
-    height: 100%; /* Define a altura do verso como 100%. */
-    width: 100%; /* Define a largura do verso como 100%. */
-    font-size: 40px; /* Define o tamanho da fonte do texto na carta. */
-    font-weight: bolder; /* Aumenta a espessura da fonte do texto na carta. */
-    display: grid; /* Exibe o verso como um grid. */
-    place-content: center; /* Centraliza o texto do verso vertical e horizontalmente. */
-    transition: all 500ms ease; /* Define uma transição suave de 500ms para todas as propriedades ao interagir com a carta. */
-    backface-visibility: hidden; /* Oculta a parte de trás da carta quando virada. */
+/* Container para centralizar os botões */
+.nivel-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.frente {
-    transform: rotateY(180deg); /* Rotaciona a frente da carta em 180 graus para não ser visível inicialmente. */
-    backface-visibility: hidden; /* Oculta a parte de trás da carta quando virada. */
-    transition: all 500ms ease; /* Define uma transição suave de 500ms para todas as propriedades ao interagir com a carta. */
+/* Estilos dos botões de nível */
+.nivel-btn {
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #1c4e8a;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.carta-virada .frente {
-    transform: rotateY(0deg); /* Quando a carta está virada, exibe a frente da carta. */
+/* Estilo hover dos botões */
+.nivel-btn:hover {
+    background-color: #ffffff;
+    color: #1c4e8a;
+    border: 2px solid #1c4e8a;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
 }
 
-.carta-virada .atras {
-    transform: rotateY(180deg); /* Quando a carta está virada, oculta o verso da carta. */
-}
-
-#reiniciar {
-    border: none; /* Remove a borda do botão de reiniciar. */
-    padding: 20px; /* Adiciona preenchimento ao botão de reiniciar. */
-    width: 250px; /* Define a largura do botão de reiniciar. */
-    margin-top: 20px; /* Adiciona uma margem superior ao botão de reiniciar. */
-    font-size: 17px; /* Define o tamanho da fonte do botão de reiniciar. */
-    font-weight: bold; /* Aumenta a espessura da fonte do botão de reiniciar. */
-    justify-self: center; /* Centraliza o botão de reiniciar horizontalmente dentro do grid. */
-    cursor: pointer; /* Altera o cursor para um ícone de ponteiro ao passar sobre o botão de reiniciar. */
+/* Título */
+body>h1 {
+    display: flex;
+    color: #ffffff;
+    width: 110%;
+    font-size: 300%;
 }
