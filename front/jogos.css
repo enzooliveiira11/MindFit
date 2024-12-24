@@ -49,7 +49,7 @@ body {
 .main-container {
     width: 80%;
     max-width: 800px;
-    margin-top: 4rem; /* Reduzindo a margem para aproximar o título do topo */
+    margin-top: 5rem; 
     text-align: center;
 }
 
@@ -85,7 +85,7 @@ body {
 
 /* Estilos para cada jogo */
 .jogo-container {
-    margin-top: 5rem; 
+    margin-top: 13rem; 
     transition: opacity 0.5s ease;
 }
 
@@ -108,9 +108,11 @@ body {
 
 
 .jogo-container h2 {
-    color: #ffffff; /* Texto dos jogos em branco */
-    font-size: 2em; /* Aumenta a fonte para maior visibilidade */
+    color: #ffffff;
+    font-size: 2.5em; /* Aumenta o tamanho da fonte para maior visibilidade */
+    margin-bottom: 1rem;
 }
+
 
 /* Botões dos níveis */
 .nivel-container {
@@ -120,7 +122,7 @@ body {
 }
 
 .nivel-btn {
-    font-size: 1.5em;
+    font-size: 1.8em; 
     color: #ffffff;
     background-color: #1c4e8a;
     padding: 15px 30px;
