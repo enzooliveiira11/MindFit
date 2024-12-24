@@ -1,12 +1,10 @@
-// Seleciona o container das cartas e o botão de reiniciar jogo
 const container = document.querySelector(".container");
 const botaoReiniciar = document.querySelector("#reiniciar");
 
-let cartas; // Variável para armazenar as cartas do jogo
+let cartas; // Armazena as cartas do jogo
 let primeiraCarta = ""; // Armazena a primeira carta clicada
 let segundaCarta = ""; // Armazena a segunda carta clicada
 
-// Adiciona um evento de clique ao botão de reiniciar o jogo
 botaoReiniciar.addEventListener("click", reiniciarJogo);
 
 // Array de objetos representando os itens (números) do jogo
@@ -19,40 +17,38 @@ let items = [
   { nome: "6", imagem: "imagem/6.jpg" },
   { nome: "7", imagem: "imagem/7.jpg" },
   { nome: "8", imagem: "imagem/8.jpg" },
+  { nome: "9", imagem: "imagem/9.jpg" },
+  { nome: "10", imagem: "imagem/10.jpg" },
 ];
 
-// Função para criar as cartas do jogo
 function criarCartas() {
-  let itemsDuplicados = [...items, ...items]; // Duplica os itens para criar pares
+  let itemsDuplicados = [...items, ...items]; // Duplica os itens para pares
   let numeros = itemsDuplicados.sort(() => Math.random() - 0.5); // Embaralha os itens
 
-  container.innerHTML = ""; // Limpa as cartas existentes no container
+  container.innerHTML = ""; // Limpa cartas existentes
   numeros.forEach((numero) => {
-    // Adiciona cada carta ao container com a frente e o verso
+    // Adiciona cada carta com frente e verso
     container.innerHTML += `
       <div class="carta" data-carta="${numero.nome}">
         <div class="atras">?</div>
         <div class="frente">
-          <img src="${numero.imagem}" width="180px" height="180px" />
+          <img src="${numero.imagem}" width="140px" height="140px" />
         </div>
       </div>
     `;
   });
 
-  virarCarta(); // Chama a função para adicionar o evento de virar cartas
+  virarCarta();
 }
 
-// Função para adicionar o evento de virar cartas
 function virarCarta() {
   cartas = document.querySelectorAll(".carta"); // Seleciona todas as cartas
 
   cartas.forEach((carta) => {
     carta.addEventListener("click", () => {
-      // Se não houver carta virada, vira a primeira carta
       if (primeiraCarta === "") {
         carta.classList.add("carta-virada");
         primeiraCarta = carta;
-        // Se a primeira carta já estiver virada, vira a segunda carta e verifica se são iguais
       } else if (segundaCarta === "") {
         carta.classList.add("carta-virada");
         segundaCarta = carta;
@@ -62,17 +58,14 @@ function virarCarta() {
   });
 }
 
-// Função para verificar se as cartas viradas são iguais
 function checarCartas() {
   const primeiroNumero = primeiraCarta.getAttribute("data-carta");
   const segundoNumero = segundaCarta.getAttribute("data-carta");
 
-  // Se os números são iguais, mantém as cartas viradas
   if (primeiroNumero === segundoNumero) {
     primeiraCarta = "";
     segundaCarta = "";
   } else {
-    // Se os números não são iguais, desvira as cartas após 600ms
     setTimeout(() => {
       primeiraCarta.classList.remove("carta-virada");
       segundaCarta.classList.remove("carta-virada");
@@ -83,17 +76,14 @@ function checarCartas() {
   }
 }
 
-// Função para reiniciar o jogo
 function reiniciarJogo() {
   primeiraCarta = "";
   segundaCarta = "";
-  criarCartas(); // Cria as cartas novamente, reiniciando o jogo
+  criarCartas();
 }
 
-// Função para redirecionar para a página de jogos
 document.getElementById("jogos").addEventListener("click", function () {
   window.location.href = "jogos.html";
 });
 
-// Começa o jogo assim que a página carrega
 criarCartas();

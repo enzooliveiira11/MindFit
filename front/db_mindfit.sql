@@ -1,5 +1,6 @@
 create database db_mindfit;
 use db_mindfit;
+use bc3wxwynpf4x7xu0w1rz;
 
 create table tasks(
 	id int auto_increment primary key,

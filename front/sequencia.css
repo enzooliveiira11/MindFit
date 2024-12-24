@@ -1,0 +1,134 @@
+/* Cabeçalho */
+header {
+    position: absolute; /* Posiciona o cabeçalho de forma absoluta. */
+    width: 98.2%; /* Define a largura do cabeçalho. */
+    top: 0; /* Posiciona o cabeçalho no topo da página. */
+    color: #de9c9c; /* Define a cor do texto como branca. */
+    font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
+}
+
+header h1 {
+    font-size: 4vh; /* Define o tamanho da fonte como 4% da altura da viewport. */
+    display: flex; /* Exibe o título como um flexbox. */
+    color: #ffffff;
+}
+
+header,
+nav ul {
+    display: flex; /* Exibe o cabeçalho e a lista de navegação como um flexbox. */
+    justify-content: space-between; /* Distribui o espaço entre os itens. */
+    padding: 1rem; /* Adiciona preenchimento interno. */
+    list-style: none; /* Remove os marcadores da lista. */
+}
+
+header ul button {
+    text-decoration: none; /* Remove o sublinhado do botão. */
+    font-size: 2vh; /* Define o tamanho da fonte do botão. */
+    color: #1c4e8a; /* Define a cor do texto do botão. */
+    background-color: #ffffff; /* Define a cor de fundo do botão como branca. */
+    width: 15vh; /* Define a largura do botão. */
+    height: 5vh; /* Define a altura do botão. */
+    border-radius: 10vh; /* Define bordas arredondadas ao botão. */
+    font-family: "Gill Sans", sans-serif; /* Define a fonte do texto do botão. */
+    font-weight: bold; /* Aumenta a espessura da fonte do texto do botão. */
+}
+
+header ul button:hover {
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse sobre o botão. */
+    color: #000000; /* Altera a cor do texto do botão ao passar o mouse. */
+}
+
+
+/* Corpo e container principal */
+body {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-family: sans-serif;
+    background-color: #43B0DF;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+/* Botões de cores */
+.color-buttons {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-button {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.green {
+    background-color: #00ff11;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.yellow {
+    background-color: #ffea00;
+}
+
+.blue {
+    background-color: #0469ce;
+}
+
+.color-button.active {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Botões de controle */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 15px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #333;
+}
+
+.button-container button:hover {
+    background-color: #555;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}

@@ -1,0 +1,118 @@
+/* Estilo global */ 
+body {
+  background-color: #43B0DF;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1c4e8a;
+  color: #ffffff;
+  font-family: "Gill Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 4vh;
+  margin-left: 1%;
+}
+
+/* Container de perfil */
+.perfil-container {
+  margin: 6rem auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilo para textos e botão */
+.perfil-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1c4e8a;
+}
+
+.perfil-container p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.perfil-container ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Ícone para ver senha */
+.eye-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.jogos-button {
+  font-size: 1.5rem;
+  padding: 0.75rem 3rem;
+  color: #ffffff;
+  background-color: #1c4e8a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.jogos-button:hover {
+  background-color: #155a8a;
+}
+
+/* Estilo para o botão de logout */
+.logout-button {
+  font-size: 1.5rem;
+  padding: 0.75rem 3rem;
+  color: #ffffff;
+  background-color: #d9534f; /* Cor vermelha para destacar */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.logout-button:hover {
+  background-color: #c9302c; /* Cor um pouco mais escura ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .perfil-container {
+      width: 95%;
+  }
+
+  header h1 {
+      font-size: 3vh;
+  }
+
+  .jogos-button,
+  .logout-button {
+      width: 100%;
+  }
+}

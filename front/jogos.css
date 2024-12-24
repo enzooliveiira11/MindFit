@@ -1,4 +1,4 @@
-/* Estilos para o cabeçalho */
+/* Cabeçalho */
 header {
     position: absolute;
     width: 98.2%;
@@ -9,8 +9,8 @@ header {
 
 header h1 {
     font-size: 4vh;
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
 header,
@@ -36,72 +36,106 @@ header ul button:hover {
     color: #000000;
 }
 
-/* Ajuste da estrutura da página */
+/* Container principal */
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
     font-family: sans-serif;
     background-color: #43B0DF;
     margin: 0;
     padding: 0;
 }
 
-/* Container principal que centraliza o conteúdo */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Faz o contêiner ocupar a tela inteira */
+.main-container {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 4rem; /* Reduzindo a margem para aproximar o título do topo */
+    text-align: center;
 }
 
-/* Ajuste do título "Jogo da Memória" */
-#texto {
+/* Título principal */
+#titulo {
     font-size: 3em;
     color: #ffffff;
-    margin-bottom: 50px; /* Espaçamento entre o título e os botões */
-    text-align: center;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
-/* Container para centralizar os botões */
+/* Seta para alternar os jogos */
+.arrow-toggle {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-toggle.esquerda {
+    right: auto;
+    left: 2rem; /* Move a seta para a esquerda */
+}
+
+.arrow-toggle:hover {
+    color: #f3d300;
+    transform: translateY(-50%) scale(1.2);
+}
+
+/* Estilos para cada jogo */
+.jogo-container {
+    margin-top: 5rem; 
+    transition: opacity 0.5s ease;
+}
+
+/* Centraliza verticalmente a seta de alternância */
+.arrow-toggle {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-toggle.esquerda {
+    right: auto;
+    left: 2rem; /* Move a seta para a esquerda */
+}
+
+
+.jogo-container h2 {
+    color: #ffffff; /* Texto dos jogos em branco */
+    font-size: 2em; /* Aumenta a fonte para maior visibilidade */
+}
+
+/* Botões dos níveis */
 .nivel-container {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-/* Estilos dos botões de nível */
 .nivel-btn {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #ffffff;
     background-color: #1c4e8a;
-    padding: 15px 40px;
+    padding: 15px 30px;
     border: 2px solid transparent;
     border-radius: 50px;
-    font-family: "Gill Sans", sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo hover dos botões */
 .nivel-btn:hover {
     background-color: #ffffff;
     color: #1c4e8a;
     border: 2px solid #1c4e8a;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-5px);
 }
 
-/* Título */
-body>h1 {
-    display: flex;
-    color: #ffffff;
-    width: 110%;
-    font-size: 300%;
-}

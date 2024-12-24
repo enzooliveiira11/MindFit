@@ -1,0 +1,26 @@
+@import "facil.css"; /* Importa o CSS da versão fácil */
+
+/* Estilo para o container do jogo da memória - Nível Difícil */
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 150px); /* Define 6 colunas */
+    gap: 15px; /* Define o espaço entre os cards */
+    justify-content: center; /* Centraliza o conteúdo do container */
+}
+
+/* Estilo para os cards */
+.carta {
+    width: 150px; /* Largura dos cards */
+    height: 150px; /* Altura dos cards */
+    position: relative;
+    cursor: pointer;
+}
+
+.carta .atras,
+.carta .frente {
+    width: 100%; /* Ocupa a largura total do card */
+    height: 100%; /* Ocupa a altura total do card */
+    display: grid;
+    place-content: center;
+}
+

@@ -2,22 +2,22 @@ header {
     position: absolute; /* Posiciona o cabeçalho de forma absoluta. */
     width: 98.2%; /* Define a largura do cabeçalho. */
     top: 0; /* Posiciona o cabeçalho no topo da página. */
-    color: #ffffff; /* Define a cor do texto como branca. */
+    color: #de9c9c; /* Define a cor do texto como branca. */
     font-family: "Gill Sans", sans-serif; /* Define a fonte do texto. */
 }
 
 header h1 {
     font-size: 4vh; /* Define o tamanho da fonte como 4% da altura da viewport. */
-    align-items: center; /* Centraliza os itens verticalmente (não visível porque o flexbox não está aplicado diretamente). */
     display: flex; /* Exibe o título como um flexbox. */
+    color:#ffffff;
 }
-
 
 header,
 nav ul {
     display: flex; /* Exibe o cabeçalho e a lista de navegação como um flexbox. */
     justify-content: space-between; /* Distribui o espaço entre os itens. */
     padding: 1rem; /* Adiciona preenchimento interno. */
+    list-style: none; /* Remove os marcadores da lista. */
 }
 
 header ul button {
@@ -52,6 +52,22 @@ body {
     gap: 10px; /* Define o espaço entre os itens do grid. */
 }
 
+.button-container {
+    display: flex; /* Usa Flexbox para alinhar os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Espaço acima do contêiner */
+}
+
+.button-container button {
+    margin: 0 10px; /* Espaço entre os botões */
+    padding: 20px; /* Adiciona preenchimento aos botões */
+    width: 200px; /* Define a largura dos botões */
+    font-size: 17px; /* Define o tamanho da fonte dos botões */
+    font-weight: bold; /* Aumenta a espessura da fonte dos botões */
+    cursor: pointer; /* Altera o cursor para um ícone de ponteiro */
+}
+
+/* Estilos para as cartas */
 .carta {
     position: relative; /* Define a posição relativa para os itens da carta. */
     cursor: pointer; /* Altera o cursor para um ícone de ponteiro ao passar sobre a carta. */
@@ -82,15 +98,4 @@ body {
 
 .carta-virada .atras {
     transform: rotateY(180deg); /* Quando a carta está virada, oculta o verso da carta. */
-}
-
-#reiniciar {
-    border: none; /* Remove a borda do botão de reiniciar. */
-    padding: 20px; /* Adiciona preenchimento ao botão de reiniciar. */
-    width: 250px; /* Define a largura do botão de reiniciar. */
-    margin-top: 20px; /* Adiciona uma margem superior ao botão de reiniciar. */
-    font-size: 17px; /* Define o tamanho da fonte do botão de reiniciar. */
-    font-weight: bold; /* Aumenta a espessura da fonte do botão de reiniciar. */
-    justify-self: center; /* Centraliza o botão de reiniciar horizontalmente dentro do grid. */
-    cursor: pointer; /* Altera o cursor para um ícone de ponteiro ao passar sobre o botão de reiniciar. */
 }

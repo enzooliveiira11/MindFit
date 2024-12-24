@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jogo da memória</title>
+    <title>MindFit - Jogos</title>
     <link rel="stylesheet" href="jogos.css" />
 </head>
 
@@ -13,24 +13,36 @@
         <h1>MindFit</h1>
         <nav>
             <ul>
-                <a href="login.html"><button>Sair</button></a>
+                <a href="perfil.html"><button>Perfil</button></a>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <!-- Título ajustado -->
-        <h1 id="texto">JOGO DA MEMÓRIA</h1>
+    <div class="main-container">
+        <h1 id="titulo">JOGOS</h1>
 
-        <!-- Container para os botões dos níveis -->
-        <div class="nivel-container">
-            <a href="facil.html"><button class="nivel-btn">Fácil</button></a>
-            <a href="medio.html"><button class="nivel-btn">Médio</button></a>
-            <a href="dificil.html"><button class="nivel-btn">Difícil</button></a>
+        <!-- Container para os jogos, que serão alternados com a seta -->
+        <div class="jogo-container" id="jogo-da-memoria">
+            <h2>Jogo da Memória</h2>
+            <div class="nivel-container">
+                <a href="facil.html"><button class="nivel-btn">Fácil</button></a>
+                <a href="medio.html"><button class="nivel-btn">Médio</button></a>
+                <a href="dificil.html"><button class="nivel-btn">Difícil</button></a>
+            </div>
         </div>
-    </div>
-</body>
 
-<script src=""></script>
+        <div class="jogo-container" id="sequencia-de-cores" style="display: none;">
+            <h2>Jogo de Sequência de Cores</h2>
+            <div class="nivel-container">
+                <a href="sequencia.html"><button class="nivel-btn">Iniciar Jogo</button></a>
+            </div>
+        </div>
+
+        <!-- Seta para alternar os jogos -->
+        <div id="arrow-toggle" class="arrow-toggle">&#9654;</div> <!-- Código da seta -->
+    </div>
+
+    <script src="jogos.js"></script>
+</body>
 
 </html>
