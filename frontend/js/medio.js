@@ -9,18 +9,16 @@ botaoReiniciar.addEventListener("click", reiniciarJogo);
 
 // Array de objetos representando os itens (números) do jogo
 let items = [
-  { nome: "1", imagem: "imagem/1.jpg" },
-  { nome: "2", imagem: "imagem/2.jpg" },
-  { nome: "3", imagem: "imagem/3.jpg" },
-  { nome: "4", imagem: "imagem/4.jpg" },
-  { nome: "5", imagem: "imagem/5.jpg" },
-  { nome: "6", imagem: "imagem/6.jpg" },
-  { nome: "7", imagem: "imagem/7.jpg" },
-  { nome: "8", imagem: "imagem/8.jpg" },
-  { nome: "9", imagem: "imagem/9.jpg" },
-  { nome: "10", imagem: "imagem/10.jpg" },
-  { nome: "11", imagem: "imagem/11.jpg" },
-  { nome: "12", imagem: "imagem/12.jpg" },
+  { nome: "1", imagem: "../assets/images/memory-game/1.jpg" },
+  { nome: "2", imagem: "../assets/images/memory-game/2.jpg" },
+  { nome: "3", imagem: "../assets/images/memory-game/3.jpg" },
+  { nome: "4", imagem: "../assets/images/memory-game/4.jpg" },
+  { nome: "5", imagem: "../assets/images/memory-game/5.jpg" },
+  { nome: "6", imagem: "../assets/images/memory-game/6.jpg" },
+  { nome: "7", imagem: "../assets/images/memory-game/7.jpg" },
+  { nome: "8", imagem: "../assets/images/memory-game/8.jpg" },
+  { nome: "9", imagem: "../assets/images/memory-game/9.jpg" },
+  { nome: "10", imagem: "../assets/images/memory-game/10.jpg" },
 ];
 
 function criarCartas() {
@@ -34,7 +32,7 @@ function criarCartas() {
       <div class="carta" data-carta="${numero.nome}">
         <div class="atras">?</div>
         <div class="frente">
-          <img src="${numero.imagem}" width="120px" height="120px" />
+          <img src="${numero.imagem}" width="140px" height="140px" />
         </div>
       </div>
     `;

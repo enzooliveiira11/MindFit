@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (result.success) {
                 Swal.fire('Login bem-sucedido!', 'Bem-vindo!', 'success')
                     .then(() => {
-                        window.location.href = "../front/formulario.html";  // Redireciona para o formulário
+                        window.location.href = "../pages/formulario.html";  // Redireciona para o formulário
                     });
             } else {
                 Swal.fire('Erro', 'Email ou senha incorretos.', 'error');
